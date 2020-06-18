@@ -18,3 +18,12 @@
     border-radius: 8px;
     margin: 5px;
 }
+
+#count{
+    background-color: dimgray;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 5px;
+    font-size: 30px;
+    color: lightgrey;
+}
