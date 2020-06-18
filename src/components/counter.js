@@ -1,6 +1,5 @@
 import React, { Component} from "react";
 import { Button } from '@material-ui/core';
-import { green } from "@material-ui/core/colors";
 
 class Counter extends Component{
 
@@ -13,9 +12,7 @@ class Counter extends Component{
     
     componentDidMount(){
         const buttons = document.querySelectorAll(".btn");
-        
-        console.log(buttons);
-
+    
         buttons.forEach((btn) => {
             btn.addEventListener('click', () => {
                 let currentCount = this.state.count;
