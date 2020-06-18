@@ -1,5 +1,6 @@
 import React, { Component} from "react";
 import { Button } from '@material-ui/core';
+import { green } from "@material-ui/core/colors";
 
 class Counter extends Component{
 
@@ -31,6 +32,16 @@ class Counter extends Component{
                     currentCount++;
                     this.setState({count: currentCount});
                 }
+
+                let counterTidbit = document.querySelector(".counter");
+
+                if(currentCount < 0 ){
+                    counterTidbit.style.backgroundColor = "red";
+                } else if(currentCount > 0){
+                    counterTidbit.style.backgroundColor = "green";
+                } else{
+                    counterTidbit.style.backgroundColor = "white";
+                } 
             });
         })
     }
