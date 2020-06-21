@@ -4,6 +4,7 @@ import SimpleColourChanger from "./components/simpleColourChanger.js";
 import Tidbit from "./components/tidbit";
 import Counter from "./components/counter";
 import Reviews from "./components/reviews";
+import NavBar from "./components/navBar";
 
 class App extends Component{
 
@@ -18,6 +19,9 @@ class App extends Component{
           </Tidbit>
           <Tidbit>
             <Reviews />
+          </Tidbit>
+          <Tidbit>
+            <NavBar />
           </Tidbit>
       </div>
     );
