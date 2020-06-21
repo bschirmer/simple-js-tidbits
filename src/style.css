@@ -1,7 +1,7 @@
 
 .App{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
   }
 
 .tidbit {
@@ -141,5 +141,36 @@
   .social-icons{
     height: 0;
     overflow: hidden;
+  }
+}
+
+  /* ================================= */
+  /* Side bar */
+  /* ================================= */
+.side-bar-container {
+  position: sticky;
+  top: 35%;
+  left: 35%;
+  width: 33%;
+  height: 100%;
+  background: var(#fff);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 1rem;
+  box-shadow: var(hsl(360, 67%, 44%));
+  transition: var(all 0.3s linear);
+  transform: translate(-1000%);
+}
+.show-sidebar {
+  transform: translate(0);
+}
+
+.side-bar-close-btn{
+  height: auto;
+}
+
+@media screen and (min-width: 676px) {
+  .sidebar {
+    width: 400px;
   }
 }

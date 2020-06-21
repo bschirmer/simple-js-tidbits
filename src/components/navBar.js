@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { faHamburger  } from "@fortawesome/free-solid-svg-icons";
-import {  faFacebook, faTwitter, faLinkedin, faTwitch, faReddit } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faTwitter, faLinkedin, faTwitch, faReddit } from "@fortawesome/free-brands-svg-icons";
 import { Button } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 class Navbar extends Component{
