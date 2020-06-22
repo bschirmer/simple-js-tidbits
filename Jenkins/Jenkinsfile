@@ -17,6 +17,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'whoami'
+                sh 'npm test'
                 sh './Jenkins/scripts/test.sh'
             }
         }
