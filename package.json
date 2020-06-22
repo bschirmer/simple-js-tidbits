@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development",
-    "test": "react-scripts test --env=jsdom"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,6 @@
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.1",
     "file-loader": "^6.0.0",
-    "jest": "^26.0.1",
     "style-loader": "^0.23.1",
     "url-loader": "^4.1.0",
     "webpack": "^4.30.0",
@@ -40,11 +39,9 @@
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@material-ui/core": "^4.10.2",
     "font-awesome": "^4.7.0",
+    "jest": "^26.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "^3.4.1"
-  },
-  "jest": {
-    "verbose": true
   }
 }
