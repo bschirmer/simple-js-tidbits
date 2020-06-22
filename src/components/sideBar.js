@@ -3,6 +3,7 @@ import { Button } from '@material-ui/core'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHamburger} from "@fortawesome/free-solid-svg-icons";
 import { faXbox, faTwitter, faFacebook, faLinkedin, faTwitch, faReddit } from "@fortawesome/free-brands-svg-icons";
+import img from '../resources/chief.png';
 
 class SideBar extends Component {
     
@@ -27,7 +28,7 @@ class SideBar extends Component {
             <div className="side-bar">
                 <Button className="side-bar-toggle-btn"><FontAwesomeIcon icon={faHamburger} /></Button>
                 <div className="side-bar-container">
-                    <img src={require("../resources/chief.png")} className="logo" alt="chief"/>
+                    <img src={img} className="logo" alt="chief"/>
                     <Button className="side-bar-close-btn"><FontAwesomeIcon icon={faXbox}/></Button>
                     
                     <ul className="side-bar-links">

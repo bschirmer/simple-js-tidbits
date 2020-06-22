@@ -3,6 +3,8 @@ import { faHamburger  } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faTwitter, faLinkedin, faTwitch, faReddit } from "@fortawesome/free-brands-svg-icons";
 import { Button } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import img from '../resources/chief.png';
+
 class Navbar extends Component{
 
     componentDidMount(){
@@ -20,7 +22,7 @@ class Navbar extends Component{
         return(
             <div className="navBar">
                 <div className="nav-header">
-                    <img src={require("../resources/chief.png")} className="logo" alt="the chief"/>
+                    <img src={img} className="logo" alt="the chief"/>
                     <Button className="nav-toggle"><FontAwesomeIcon icon={faHamburger}/></Button>
                 </div>
                 <ul className="links">
