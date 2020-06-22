@@ -30,7 +30,7 @@ class SideBar extends Component {
                     <img src={require("../resources/chief.png")} className="logo" alt="chief"/>
                     <Button className="side-bar-close-btn"><FontAwesomeIcon icon={faXbox}/></Button>
                     
-                    <ul class="side-bar-links">
+                    <ul className="side-bar-links">
                         <li>
                         <a href="index.html">home</a>
                         </li>
@@ -44,7 +44,7 @@ class SideBar extends Component {
                         <a href="">contact</a>
                         </li>
                     </ul>
-                    <ul class="side-bar-social-icons">
+                    <ul className="side-bar-social-icons">
                         <li>
                             <a href="https://www.twitter.com">
                                 <FontAwesomeIcon icon={faTwitter}/>

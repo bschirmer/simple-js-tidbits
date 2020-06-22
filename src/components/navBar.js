@@ -23,7 +23,7 @@ class Navbar extends Component{
                     <img src={require("../resources/chief.png")} className="logo" alt="the chief"/>
                     <Button className="nav-toggle"><FontAwesomeIcon icon={faHamburger}/></Button>
                 </div>
-                <ul class="links">
+                <ul className="links">
                     <li>
                     <a href="index.html">home</a>
                     </li>
@@ -37,7 +37,7 @@ class Navbar extends Component{
                     <a href="">contact</a>
                     </li>
                 </ul>
-                <ul class="social-icons">
+                <ul className="social-icons">
                     <li>
                         <a href="https://www.twitter.com">
                             <FontAwesomeIcon icon={faTwitter}/>
