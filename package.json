@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development",
-    "test": "react-scripts test --env=jsdom"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
