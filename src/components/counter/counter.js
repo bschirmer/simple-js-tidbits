@@ -1,63 +1,35 @@
-import React, { Component} from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from '@material-ui/core';
 
-class Counter extends Component{
+const Counter = () => {
 
-    constructor(){
-        super();
-        this.state = {
-            count: 0
-        }
-    }
-    
-    componentDidMount(){
-        const buttons = document.querySelectorAll(".btn");
-    
-        buttons.forEach((btn) => {
-            btn.addEventListener('click', () => {
-                let currentCount = this.state.count;
-                const styles = btn.classList;
-                if(styles.contains("decrease")){
-                    currentCount--;
-                    this.setState({count: currentCount});
-                }
-                else if(styles.contains('reset')){
-                    currentCount = 0;
-                    this.setState({count: currentCount});
-                }
-                else if(styles.contains('increase')){
-                    currentCount++;
-                    this.setState({count: currentCount});
-                }
+    const [count, setCount] = useState(0);
 
-                let counterTidbit = document.querySelector(".counter");
+    useEffect(() => {
+        let counterTidbit = document.querySelector(".counter");
 
-                if(currentCount < 0 ){
-                    counterTidbit.style.backgroundColor = "red";
-                } else if(currentCount > 0){
-                    counterTidbit.style.backgroundColor = "green";
-                } else{
-                    counterTidbit.style.backgroundColor = "white";
-                } 
-            });
-        })
-    }
+        if(count < 0){
+            counterTidbit.style.backgroundColor = "red";
+        } else if(count > 0){
+            counterTidbit.style.backgroundColor = "green";
+        } else{
+            counterTidbit.style.backgroundColor = "white";
+        } 
+    });
 
-    render(){
-        return(
+    return(
         <div className="counter">
             <span className="title"> Counter </span>
             <div>
-                <span id="count">{this.state.count}</span>
+                <span id="count">{count}</span>
                 <div className="btn-container">
-                    <Button className="btn decrease">-1</Button>
-                    <Button className="btn reset">reset</Button>
-                    <Button className="btn increase">+1</Button>
+                    <Button onClick={() => setCount(count - 1)}>-1</Button>
+                    <Button onClick={() => setCount(0)}>reset</Button>
+                    <Button onClick={() => setCount(count + 1)}>+1</Button>
                 </div>
             </div>
         </div>
         );
-    };
 }
 
 export default Counter;
