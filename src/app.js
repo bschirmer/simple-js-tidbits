@@ -6,6 +6,7 @@ import Counter from "./components/counter/counter";
 import Reviews from "./components/reviews/reviews";
 import NavBar from "./components/navBar/navBar";
 import SideBar from "./components/sideBar/sideBar";
+import Modal from "./components/modal/modal";
 
 class App extends Component{
 
@@ -26,6 +27,9 @@ class App extends Component{
           </Tidbit>
           <Tidbit>
             <SideBar />
+          </Tidbit>
+          <Tidbit>
+            <Modal />
           </Tidbit>
       </div>
     );
