@@ -3,7 +3,7 @@ import { faHamburger  } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faTwitter, faLinkedin, faTwitch, faReddit } from "@fortawesome/free-brands-svg-icons";
 import { Button } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import img from '../resources/chief.png';
+import img from '../../resources/chief.png';
 
 class Navbar extends Component{
 

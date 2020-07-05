@@ -3,7 +3,7 @@ import { Button } from '@material-ui/core'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHamburger} from "@fortawesome/free-solid-svg-icons";
 import { faXbox, faTwitter, faFacebook, faLinkedin, faTwitch, faReddit } from "@fortawesome/free-brands-svg-icons";
-import img from '../resources/chief.png';
+import img from '../../resources/chief.png';
 
 class SideBar extends Component {
     

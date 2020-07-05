@@ -1,11 +1,11 @@
 import React, { Component} from "react";
 import "./style.css";
-import SimpleColourChanger from "./components/simpleColourChanger.js";
+import SimpleColourChanger from "./components/simpleColourChanger/simpleColourChanger.js";
 import Tidbit from "./components/tidbit";
-import Counter from "./components/counter";
-import Reviews from "./components/reviews";
-import NavBar from "./components/navBar";
-import SideBar from "./components/sideBar";
+import Counter from "./components/counter/counter";
+import Reviews from "./components/reviews/reviews";
+import NavBar from "./components/navBar/navBar";
+import SideBar from "./components/sideBar/sideBar";
 
 class App extends Component{
 
