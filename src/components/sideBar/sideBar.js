@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHamburger} from "@fortawesome/free-solid-svg-icons";
 import { faXbox, faTwitter, faFacebook, faLinkedin, faTwitch, faReddit } from "@fortawesome/free-brands-svg-icons";
 import img from '../../resources/chief.png';
+import './sideBar.css';
 
 const SideBar = () => {
 

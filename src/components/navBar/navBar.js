@@ -4,6 +4,7 @@ import { faFacebook, faTwitter, faLinkedin, faTwitch, faReddit } from "@fortawes
 import { Button } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import img from '../../resources/chief.png';
+import './navBar.css';
 
 const Navbar = () => {
     
